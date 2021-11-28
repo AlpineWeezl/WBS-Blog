@@ -1,0 +1,56 @@
+/* @import url("https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto|Raleway")
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:    "h h h h h"
+                            "n n n n n"
+                            "m m m m m"
+                            "m m m m m"
+                            "f f f f f";
+    gap: 10px;
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        font-family: Raleway;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:    "h h h h h"
+                                "n m m m m"
+                                "n m m m m"
+                                "n m m m m"
+                                "f f f f f";
+        gap: 10px;
+    }
+}
+
+header {
+    padding: 20px;
+    background-color: burlywood;
+    grid-area: h;
+}
+
+nav {
+    padding: 20px;
+    background-color: blue;
+    grid-area: n;
+}
+
+main {
+    padding: 20px;
+    background-color: crimson;
+    grid-area: m;
+
+}
+
+footer {
+    padding: 20px;
+    background-color: darkorange;
+    grid-area: f;
+}
