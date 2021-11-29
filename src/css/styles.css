@@ -1,24 +1,24 @@
- @import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto|Raleway');
-
+@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto|Raleway');
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Raleway;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:    "h h h h h"
-                            "n n n n n"
+    grid-template-columns: 1fr repeat(4, 5fr);
+    grid-template-areas:    "h n n n n"
+                            "m m m m m"
                             "m m m m m"
                             "m m m m m"
                             "f f f f f";
-    gap: 10px;
 }
 
 nav {
-    background-color: lightskyblue;
-    padding: 0px 0;
+    background-color: black;
+    padding: 0;
     text-align: center;
     grid-area: n;
     display: grid;
@@ -29,52 +29,34 @@ nav {
 .navItem {
     margin: 0;
     width: 100%;
+    height: 100%;
     text-decoration: none;
     padding: 25px;
-    color: black;
-
-    background-color: lightskyblue;
-
+    color: white;
+    background-color: black;
     border: none;
     grid-area: ni;
     
 }
 .navItem:hover {
     color: white;
-    background-color: rgb(101, 101, 253);
+    background-color: grey;
     width: 100%;
 }
 
-@media screen and (min-width: 1080px) {
-    body {
-        font-family: Raleway;
-        display: grid;
-        grid-template-columns: 150px repeat(4, 1fr);
-        grid-template-areas:    "h h h h h"
-                                "n m m m m"
-                                "n m m m m"
-                                "n m m m m"
-                                "f f f f f";
-        gap: 10px;
-    }
-
-    nav {
-        grid-area: n;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .navItem {
-        width: 100%;
-    }
+.menubar1 .menubar2 .menubar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 1px;
 }
 
 header {
     padding: 20px;
-    height: 30px;
+    height: 70px;
     grid-area: h;
+    background-color: black;
 }
 
 .navItemText {
@@ -87,38 +69,59 @@ main {
 }
 
 .article_odd_number {
-    margin: 10px 0;
+    height: 100%;
+    border: black dotted;
+    border-width: 1px 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:    "p t";
-    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "p"
+                            "t";
 
 }
 .article_even_number {
-    margin: 10px 0;
+    height: 100%;
+    border: black dotted;
+    border-width: 1px 0 0 0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:    "t p";
-    gap: 10px;
-
+    grid-template-columns: 1fr;
+    grid-template-areas:    "p"
+                            "t";
 }
 
+
+
+@media screen and (min-width: 1080px) {
+    .article_odd_number {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:    "p t";
+    
+    }
+    .article_even_number {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:    "t p";
+    
+    }
+}
 .article_text {
     padding: 10px 20px;
-    background-color: cadetblue;
     text-align: justify;
     grid-area: t;
 }
 
 .article_picture {
-    padding: 10px 20px;
-    background-color: rgb(80, 255, 89);
+    max-width: 100%;
+    justify-content: space-around;
     grid-area: p;
+    object-fit: cover;
+    box-shadow: lightgray 5px left;
 }
 
 
 footer {
     padding: 20px;
-    background-color: darkorange;
+    background-color: lightgray;
     grid-area: f;
+    text-align: center;
 }
