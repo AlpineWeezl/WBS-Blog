@@ -45,6 +45,12 @@
     width: 100%;
 }
 
+.sticky-section{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0px;
+}
+
 .menubar1 .menubar2 .menubar3 {
     width: 35px;
     height: 5px;
