@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto|Raleway")
-*/
+ @import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto|Raleway');
+
 * {
     box-sizing: border-box;
 }
@@ -16,11 +16,40 @@ body {
     gap: 10px;
 }
 
+nav {
+    background-color: lightskyblue;
+    padding: 0px 0;
+    text-align: center;
+    grid-area: n;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:    "ni ni ni ni";
+}
+
+.navItem {
+    margin: 0;
+    width: 100%;
+    text-decoration: none;
+    padding: 25px;
+    color: black;
+
+    background-color: lightskyblue;
+
+    border: none;
+    grid-area: ni;
+    
+}
+.navItem:hover {
+    color: white;
+    background-color: rgb(101, 101, 253);
+    width: 100%;
+}
+
 @media screen and (min-width: 1080px) {
     body {
         font-family: Raleway;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 150px repeat(4, 1fr);
         grid-template-areas:    "h h h h h"
                                 "n m m m m"
                                 "n m m m m"
@@ -28,26 +57,65 @@ body {
                                 "f f f f f";
         gap: 10px;
     }
+
+    nav {
+        grid-area: n;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navItem {
+        width: 100%;
+    }
 }
 
 header {
     padding: 20px;
-    background-color: burlywood;
+    height: 30px;
     grid-area: h;
 }
 
-nav {
-    padding: 20px;
-    background-color: blue;
-    grid-area: n;
+.navItemText {
+    text-decoration: none;
+    color: black;
 }
 
 main {
-    padding: 20px;
-    background-color: crimson;
     grid-area: m;
+}
+
+.article_odd_number {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:    "p t";
+    gap: 10px;
 
 }
+.article_even_number {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:    "t p";
+    gap: 10px;
+
+}
+
+.article_text {
+    padding: 10px 20px;
+    background-color: cadetblue;
+    text-align: justify;
+    grid-area: t;
+}
+
+.article_picture {
+    padding: 10px 20px;
+    background-color: rgb(80, 255, 89);
+    grid-area: p;
+}
+
 
 footer {
     padding: 20px;
