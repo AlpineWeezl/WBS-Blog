@@ -88,8 +88,6 @@ main {
                             "t";
 }
 
-
-
 @media screen and (min-width: 1080px) {
     .article_odd_number {
         display: grid;
