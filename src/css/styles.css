@@ -21,10 +21,17 @@ body {
     box-shadow: black 0 3px 5px 0;
 }
 
-.logo {
-    padding: 10px 20px;
+.logo-container {
+    padding: 5px 20px;
     width: auto;
     grid-area: l;
+}
+
+.logo {
+    padding: 7%;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: black inset 0 0 10px 0;
 }
 
 .hamburger-menu-container {
@@ -51,9 +58,9 @@ body {
 .hamburger-icon:hover {
     padding: 20px;
     margin-left: 50%;
-    background-color: rgba(15, 15, 15, 0.6);
+    background-color: rgba(37, 75, 241, 1);
     border-radius: 0 0 15px 15px;
-    box-shadow: lightgreen 0 0px 15px 0;
+    box-shadow: inset black 0 3px 5px 0;
 }
 
 .dropdon-item-container {
@@ -83,9 +90,9 @@ body {
 }
 .navItem:hover {
     color: white;
-    background-color: rgba(45, 45, 45, 0.66);
-    border-radius: 0 0 15px 15px;
-    box-shadow: lightgreen 0 0px 15px 0;
+    background-color: rgba(37, 75, 241, 1);
+    border-radius: 0 0 10px 10px;
+    box-shadow: inset black 0 3px 5px 0;
 }
 
 .sticky-section{
@@ -110,30 +117,27 @@ main {
     grid-area: m;
 }
 
-.article_odd_number {
+.article-container {
     padding: 30px;
-    margin: 10px;
+    margin: 20px 17%;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: black 0 3px 5px 0;
+}
+
+.article_odd_number {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:    "p t";
-    border: black solid;
-    border-width: 1px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: black 0 3px 5px 0;
+
 }
 .article_even_number {
-    padding: 30px;
-    margin: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:    "t p";
-    border: black solid;
-    border-width: 1px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: black 0 3px 5px 0;
 }
+
 
 .article_text {
     grid-area: t;
@@ -145,7 +149,7 @@ main {
 .article-picture {
     grid-area: p;
     max-width: 100%;
-    margin: 10px 10px;
+    margin: 10px 0px;
     grid-area: p;
     object-fit: cover;
     box-shadow: black 0 3px 5px 0;
@@ -153,6 +157,9 @@ main {
 }
 
 @media screen and (max-width: 720px) {
+    body {
+        width: 100%;
+    }
     .head {
         align-content: flex-end;
     }
@@ -167,17 +174,22 @@ main {
         text-align: right;
     }
 
-    .article_odd_number {
+    .article-container {
         width: 100%;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .article_odd_number {
         display: grid;
         grid-template-columns:  1fr;
         grid-template-areas:    "p"
                                 "t";
     }
     .article_even_number {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-areas:    "p"
+                                "t";
     }
     .article_text {
         grid-area: t;
