@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    <title>MaWi</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>MaWi</title>
 </head>
 <body>
-    <div class="layout"></div>
+    <div class="layout">
         <header class="head sticky-section">
             <div class="logo">
                 <a href="index.html">
                     <img height="60px" src="src/pics/MaWi_Grau-Grau.png">
                 </a>
             </div>
-            <div class="navbar"></div>
+            <div class="hamburger-menu-container">
+                <button class="hamburger-menu">
+                    <i id="bar" class="hamburger-icon fa fa-bars"></i>
+                </button>
+                <div class="dropdown-container">
+                    <div class="dropdown-item-container">
+                        <a href="#article1""><input type="button" class="dropdown-item" value="Article 1"></a>
+                        <a href="#article2""><input type="button" class="dropdown-item" value="Article 2"></a>
+                        <a href="#article3""><input type="button" class="dropdown-item" value="Article 3"></a>
+                        <a href="#article4""><input type="button" class="dropdown-item" value="Article 4"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
                 <a href="#article1""><input type="button" class="navItem" value="Article 1"></a>
                 <a href="#article2""><input type="button" class="navItem" value="Article 2"></a>
                 <a href="#article3""><input type="button" class="navItem" value="Article 3"></a>
@@ -25,9 +39,9 @@
         <main>
             <section class="content">
                 <article id="article1" class="article_odd_number">
-                    <div>
+                    <div class="article-picture-container">
                         <picture>
-                            <img class="article_picture" src="src/pics/deer.jpg" alt="Deer at a meadow">
+                            <img class="article-picture" src="src/pics/deer.jpg" alt="Deer at a meadow">
                         </picture>
                     </div>
                     <div class="article_text">
@@ -60,9 +74,9 @@
                     </div>
                 </article>
                 <article id="article2" class="article_even_number">
-                    <div class="article_picture">
+                    <div class="article-picture-container">
                         <picture>
-                            <img class="article_picture" src="src/pics/wolf1.jpg" alt="Wolf looking for food">
+                            <img class="article-picture" src="src/pics/wolf1.jpg" alt="Wolf looking for food">
                         </picture>
                     </div>
                     <div class="article_text">
@@ -96,9 +110,9 @@
                     </div>
                 </article>
                 <article id="article3" class="article_odd_number">
-                    <div class="article_picture">
+                    <div class="article-picture-container">
                         <picture>
-                            <img class="article_picture" src="src/pics/rabbit1.jpg" alt="Rabbit with flowers">
+                            <img class="article-picture" src="src/pics/rabbit1.jpg" alt="Rabbit with flowers">
                         </picture>                    </div>
                     <div class="article_text">
                         <p>Lorem ipsum dolor sit amet, 
@@ -131,9 +145,9 @@
                     </div>
                 </article>
                 <article id="article4" class="article_even_number">
-                    <div class="article_picture">
+                    <div class="article-picture-container">
                         <picture>
-                            <img class="article_picture" src="src/pics/cat1.jpg" alt="lazy Cat">
+                            <img class="article-picture" src="src/pics/cat1.jpg" alt="lazy Cat">
                         </picture>
                     </div>
                     <div class="article_text">
