@@ -8,11 +8,11 @@
 
 body {
     overflow-x: hidden;
-    background-color: rgb(247, 244, 235);
+    background-color: rgb(240, 240, 240);
 }
 
 .head {
-    background-color: rgba(111, 136, 245, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     margin-bottom: 20px;
     height: 70px;
     display: flex;
@@ -58,7 +58,7 @@ body {
 .hamburger-icon:hover {
     padding: 20px;
     margin-left: 50%;
-    background-color: rgba(37, 75, 241, 1);
+    background-color: rgba(0, 0, 0, 1);
     border-radius: 0 0 15px 15px;
     box-shadow: inset black 0 3px 5px 0;
 }
