@@ -8,7 +8,7 @@
     <link href="src/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>MaWi</title>
+    <title>MaWi - WBS-Primer</title>
 </head>
 
 <body>
@@ -17,20 +17,31 @@
             <div class="head">
                 <div class="logo-container">
                     <a class="logo" href="index.html">
-                        <p>Bewegung in den Alpen</p>
+                        <p class="logo">Aktiv in den Alpen</p>
                     </a>
                 </div>
-                <div class="hamburger-menu-container">
-                    <button class="hamburger-menu">
-                        <i id="bar" class="hamburger-icon fa fa-bars"></i>
-                    </button>
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-container">
-                            <a href="#article1""><input type=" button" class="dropdown-item" value="Article 1"></a>
-                            <a href="#article2""><input type=" button" class="dropdown-item" value="Article 2"></a>
-                            <a href="#article3""><input type=" button" class="dropdown-item" value="Article 3"></a>
-                            <a href="#article4""><input type=" button" class="dropdown-item" value="Article 4"></a>
-                        </div>
+                <div class="social-bar">
+                    <a class="socialbar-item" href="#">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a class="socialbar-item" href="#">
+                        <i style="color: green;" class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a class="socialbar-item" href="#">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hamburger-menu-container">
+                <button class="hamburger-menu">
+                    <i id="bar" class="hamburger-icon fa fa-bars"></i>
+                </button>
+                <div class="dropdown-container">
+                    <div class="dropdown-item-container">
+                        <a href="#article1""><input type=" button" class="dropdown-item" value="Article 1"></a>
+                        <a href="#article2""><input type=" button" class="dropdown-item" value="Article 2"></a>
+                        <a href="#article3""><input type=" button" class="dropdown-item" value="Article 3"></a>
+                        <a href="#article4""><input type=" button" class="dropdown-item" value="Article 4"></a>
                     </div>
                 </div>
             </div>
@@ -41,136 +52,60 @@
                 <a href="#article4""><input type=" button" class="navItem" value="Article 4"></a>
             </div>
         </header>
-        <main>
+        <main id="wrapper">
             <section class="content">
                 <article id="article1" class="article-container article_odd_number">
-                    <div class="article-picture-container">
-                        <picture>
-                            <img class="article-picture" src="src/pics/deer.jpg" alt="Deer at a meadow">
-                        </picture>
-                    </div>
+                    <a href="#">
+                        <div class="image-container">
+                            <picture>
+                                <img class="image" src="src/pics/Hiking.jpg" alt="Woman on a peak">
+                            </picture>
+                            <div class="image-caption">
+                                <p class="h1">Hiking</p>
+                            </div>
+                        </div>
+                    </a>
                     <div class="article_text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas recusandae voluptatum sapiente
-                            dicta sed vitae distinctio atque natus, officiis perferendis? Cum debitis modi amet
-                            laboriosam consequatur quos accusamus aliquid fugiat?
-                            <br>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
-                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem
-                            ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
+                        <p></p>
                     </div>
                 </article>
                 <article id="article2" class="article-container article_even_number">
-                    <div class="article-picture-container">
+                    <div class="image-container">
                         <picture>
-                            <img class="article-picture" src="src/pics/wolf1.jpg" alt="Wolf looking for food">
+                            <img class="image" src="src/pics/Trailrunning.jpg" alt="Running Shoes on path">
                         </picture>
+                        <div class="image-caption">
+                            <p class="h1">Trail- running</p>
+                        </div>
                     </div>
                     <div class="article_text">
-                        <p>Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et
-                            dolore magna aliquyam erat, sed diam voluptua.
-                            At vero eos et accusam et justo duo dolores et ea rebum.
-                            St clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat,
-                            sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren,
-                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                            magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                            sit amet.
-                            <br>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate
-                            velit esse molestie consequat, vel illum dolore eu
-                            feugiat nulla facilisis at vero eros et accumsan et iusto
-                            odio dignissim qui blandit praesent luptatum zzril
-                            delenit augue duis dolore te feugait nulla facilisi.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat.
-                        </p>
+                        <p></p>
                     </div>
                 </article>
                 <article id="article3" class="article-container article_odd_number">
-                    <div class="article-picture-container">
+                    <div class="image-container">
                         <picture>
-                            <img class="article-picture" src="src/pics/rabbit1.jpg" alt="Rabbit with flowers">
+                            <img class="image" src="src/pics/Paragliding.jpg" alt="Paraglider in the alps">
                         </picture>
+                        <div class="image-caption">
+                            <p class="h1">Para- gliding</p>
+                        </div>
                     </div>
                     <div class="article_text">
-                        <p>Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et
-                            dolore magna aliquyam erat, sed diam voluptua.
-                            At vero eos et accusam et justo duo dolores et ea rebum.
-                            St clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat,
-                            sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren,
-                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                            magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                            sit amet.
-                            <br>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate
-                            velit esse molestie consequat, vel illum dolore eu
-                            feugiat nulla facilisis at vero eros et accumsan et iusto
-                            odio dignissim qui blandit praesent luptatum zzril
-                            delenit augue duis dolore te feugait nulla facilisi.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat.
-                        </p>
+                        <p></p>
                     </div>
                 </article>
                 <article id="article4" class="article-container article_even_number">
-                    <div class="article-picture-container">
+                    <div class="image-container">
                         <picture>
-                            <img class="article-picture" src="src/pics/cat1.jpg" alt="lazy Cat">
+                            <img class="image" src="src/pics/Skiing.jpg" alt="lazy Cat">
                         </picture>
+                        <div class="image-caption">
+                            <p class="h1">Skiing</p>
+                        </div>
                     </div>
                     <div class="article_text">
-                        <p>Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et
-                            dolore magna aliquyam erat, sed diam voluptua.
-                            At vero eos et accusam et justo duo dolores et ea rebum.
-                            St clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat,
-                            sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren,
-                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                            magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                            sit amet.
-                            <br>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate
-                            velit esse molestie consequat, vel illum dolore eu
-                            feugiat nulla facilisis at vero eros et accumsan et iusto
-                            odio dignissim qui blandit praesent luptatum zzril
-                            delenit augue duis dolore te feugait nulla facilisi.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat.
-                        </p>
+                        <p></p>
                     </div>
                 </article>
             </section>
