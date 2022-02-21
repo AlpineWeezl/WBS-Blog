@@ -1,13 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids|Roboto|Raleway|Indie Flower');
+@import url('https://fonts.googleapis.com/css?family=Indie Flower|Roboto|Share Tech Mono');
+
+:root {
+    --primary: #C5D92B;
+    --primary-transparent: rgba(197, 217, 43, 0.7);
+    --secondary: #8AA626;
+    --tertiary: #41591C;
+    --first-complimentary: #43AED9;
+    --second-complimentary: #99D9F2;
+    --shadow: #808080;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+
+}
+
+a {
+    text-decoration: none;
+    color: none;
 }
 
 .layout {
+    display: flex;
+    flex-direction: column;
     padding: 0px;
     height: auto;
     margin: auto;
@@ -16,45 +34,54 @@
 
 .head {
     display: flex;
-    width: 90%;
-    margin: auto;
-    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
     justify-content: space-between;
 }
 
 .logo {
     float: left;
-    color: black;
+    color: var(--tertiary);
     text-decoration: none;
     font-family: 'Indie Flower';
-    font-size: xx-large;
+    font-size: 35px;
 }
 
 .socialbar {
+    padding: 10px 0;
     margin-left: auto;
-    color: black;
+    color: var(--tertiary);
     text-decoration: none;
-    font-family: 'Indie Flower';
-    font-size: xx-large;
 }
 
 .socialbar-item {
     margin: 0 10px;
     text-decoration: none;
+    color: var(--tertiary);
+    font-size: 40px;
 }
 
-.hamburger-menu-container {
-    
+.subhead {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
-.navbar {
-    width: 90%;
-    margin: auto;
-    background-color: yellow;
+.subhead p {
+    font-family: 'Indie Flower';
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
-.navbar-item {
-
+.subhead button {
+    border: none;
+    background: none;
+    color: var(--primary);
 }
 
 #wrapper {
@@ -63,6 +90,13 @@
     height: auto;
     margin: auto;
     overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
 }
 
 .h1,
@@ -75,8 +109,28 @@ p {
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-size: 50px;
-    color: #00bfb6;
+    color: var(--tertiary);
     text-decoration: underline;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 10px 10px;
+    padding: 20px;
+    border: 0px var(--shadow) solid;
+    border-radius: 10px;
+    box-shadow: 1px 2px 9px var(--shadow);
+
+}
+
+.article-text {
+    width: 250px;
+    font-family: Roboto;
+    padding: 0px;
+    margin: 10px 0;
+    text-align: justify;
 }
 
 .image-container {
@@ -84,7 +138,6 @@ p {
     width: 250px;
     height: 250px;
     position: relative;
-    margin: 10px;
     cursor: pointer;
 }
 
@@ -93,16 +146,15 @@ p {
     height: 250px;
     position: absolute;
     border-radius: 5px;
-    box-shadow: 1px 2px 9px #000;
 }
 
 .image-caption {
     display: flex;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--primary-transparent);
+    opacity: 0.7;
     border-radius: 5px;
-    box-shadow: 1px 2px 9px #000;
     position: absolute;
     opacity: 0;
     transition: all 500ms ease-in-out;
@@ -116,28 +168,43 @@ p {
     margin: 20px;
     width: 230px;
     padding: 30px 0;
-    border: solid 5px #00bfb6;
+    border: solid 5px var(--tertiary);
     height: 80%;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    font-family: 'Indie Flower';
     font-size: 50px;
-    color: #00bfb6;
+    color: var(--tertiary);
 }
 
 .image-caption p {
     text-align: center;
-    font-family: 'Overpass Mono', monospace;
-    color: #fff;
+    font-family: 'Indie Flower', ;
+    color: white;
 }
 
 .image-container:hover .image-caption {
     opacity: 1;
 }
 
+footer {
+    display: flex;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    width: 100%;
+    min-height: 55px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    position: relative;
+    bottom: 0;
+}
+
 
 /* media queries */
-
+/*
 @media all and (min-width: 0px) and (max-width: 520px) {
     #wrapper {
         width: 100%;
@@ -165,3 +232,4 @@ p {
         height: 250px;
     }
 }
+*/
