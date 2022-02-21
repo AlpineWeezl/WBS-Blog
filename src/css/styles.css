@@ -18,6 +18,7 @@
     display: flex;
     width: 90%;
     margin: auto;
+    padding: 20px 0;
     justify-content: space-between;
 }
 
@@ -42,14 +43,21 @@
     text-decoration: none;
 }
 
+.hamburger-menu-container {
+    
+}
+
 .navbar {
     width: 90%;
     margin: auto;
     background-color: yellow;
 }
 
+.navbar-item {
+
+}
+
 #wrapper {
-    text-align: center;
     padding: 0px;
     width: 90%;
     height: auto;
@@ -73,7 +81,6 @@ p {
 
 .image-container {
     float: left;
-    align-items: center;
     width: 250px;
     height: 250px;
     position: relative;
@@ -91,8 +98,6 @@ p {
 
 .image-caption {
     display: flex;
-    align-items: center;
-    justify-items: auto;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
